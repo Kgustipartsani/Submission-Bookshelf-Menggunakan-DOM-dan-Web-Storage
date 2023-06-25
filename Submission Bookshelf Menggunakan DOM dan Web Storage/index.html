@@ -1,0 +1,72 @@
+<!-- 
+Submission Aplikasi Pengelolaan Data Menggunakan DOM dan Web Storage
+Kamaludin Gustipartsani
+F144XB490
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">  
+        <header>
+            <img src="assets/logo.png" alt="Logo Submission Bookshelf" style="float: left; margin-right: 10px; width: 6%;">
+            SUBMISSION BOOKSHELF
+          </header>
+          
+        <main>
+            <form id="form-book" action="#">
+                <div class="form-group">
+                    <label for="input-judul">Judul Buku</label>
+                    <input class="input-item" type="text" name="judul" placeholder="" id="input-judul" required/>
+                </div>
+                <div class="form-group">
+                    <label for="input-penulis">Nama Penulis</label>
+                    <input class="input-item" type="text" name="penulis" placeholder="" id="input-penulis" required/>
+                </div>
+                <div class="form-group">
+                    <label for="input-tahun">Tahun Terbit</label>
+                    <input class="input-item" type="number" name="tahun" min="0" placeholder="" id="input-tahun" required/>
+                </div>
+                <div class="form-group form-group-checkbox">
+                    <label for="input-baca">Telah Dibaca</label>
+                    <input class="input-checkbox" type="checkbox" name="baca" id="input-baca"/>
+                </div>
+                <button class="btn-submit" type="submit" name="Submit">Tambahkan ke rak buku</button>
+            </form>
+
+            <section class="wrap-form-search">
+                <h2>Cari Judul Buku</h2>
+                <div class="form-search">
+                    <input type="text" id="input-search"/>
+                    <button id="btn-search">Cari</button>                    
+                </div>
+            </section>
+
+            <section class="booklist">
+                <h2>Rak Buku Belum Dibaca</h2>
+                <div id="unread-book">
+
+                </div>
+            </section>
+
+            <section class="booklist">
+                <h2>Rak Buku Sudah Dibaca</h2>
+                <div id="finished-read-book">
+
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+<footer>
+	<small>Kamaludin Gustipartsani F144XB490</small>
+  </footer>  
+</html>
